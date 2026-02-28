@@ -38,7 +38,7 @@ const Navbar = ({ toggleTheme, theme }: { toggleTheme: () => void; theme: string
       background: 'var(--nav-bg)',
     }}>
       <div style={{ fontFamily: 'var(--font-header)', fontSize: '1.5rem', fontWeight: 800, cursor: 'pointer' }} onClick={() => window.scrollTo(0, 0)}>
-        SK<span style={{ color: 'var(--primary-accent)' }}>.</span>
+        {/* SK<span style={{ color: 'var(--primary-accent)' }}>.</span> */}
       </div>
 
       {/* Desktop Menu */}
@@ -149,8 +149,9 @@ export default function App() {
               Hi, I'm <strong style={{ color: 'var(--text-primary)' }}>{PERSONAL_INFO.name}</strong>. {PERSONAL_INFO.profile}
             </p>
             <div className="hero-buttons" style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
-              <button className="btn-primary" onClick={() => document.getElementById('contact')?.scrollIntoView()}>Get In Touch</button>
-              <button className="glass" style={{ padding: '1rem 2.5rem', borderRadius: '4px', fontWeight: 700, border: '1px solid var(--border-color)', textTransform: 'uppercase', letterSpacing: '0.15em', fontSize: '0.82rem' }} onClick={() => document.getElementById('projects')?.scrollIntoView()}>Explore Portfolio</button>
+              <button className="btn-primary cursor-pointer" style={{ cursor: 'pointer' }} onClick={() => document.getElementById('contact')?.scrollIntoView()}>Get In Touch</button>
+              <button className="glass" style={{ padding: '1rem 2.5rem', borderRadius: '4px', fontWeight: 700, border: '1px solid var(--border-color)', textTransform: 'uppercase', letterSpacing: '0.15em', fontSize: '0.82rem', cursor: 'pointer',
+              color: '#ffffff' }} onClick={() => document.getElementById('projects')?.scrollIntoView()}>Explore Portfolio</button>
             </div>
           </motion.div>
 

@@ -32,7 +32,7 @@ export const SKILLS = [
 export const EXPERIENCE = [
     {
         company: "ABOSS Technologies",
-        role: "Software Developer",
+        role: "Software Engineer",
         period: "Jan 2022 - PRESENT",
         description: [
             "Architected and maintained large-scale enterprise applications using PHP, Laravel, and Django.",
